@@ -12,3 +12,4 @@ Linguagens = [
 ]
 
 print (Linguagens)
+#Metodo Snakecase: Todas as letras das variáveis em minusculo e as variáveis claras sobre suas funções 
