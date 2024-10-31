@@ -17,7 +17,7 @@ def criar_produto (request):
     if form.is_valid():
         form.save()
         return redirect ('lista_produtos')
-    
+     
 #editar um produto
 def editar_produto (request, id):
     produto = get_object_or_404(Produtos, id = id)
@@ -25,7 +25,7 @@ def editar_produto (request, id):
     if form.is_valid():
        form.save()
        return redirect ('lista_produtos')
-    return render (request,'produtos/editar_produto', {'form':form, 'produto', produto})
+    return render (request,'produtos/editar_produto', {'form':form, 'produto' : produto})
 
 #deletar produto
 def deletar_produto (request, id):
